@@ -1,0 +1,18 @@
+{
+	"openrtk config":	{
+		"Product Name":	"OpenRTK300LI",
+		"Product PN":	"5020-1800-01 0.0.20",
+		"Product SN":	1927300448,
+		"Version":	"OpenRTK300LI INS 1.1.0",
+		"Compile Time":	"Jan  3 2020",
+		"UserPacketType":	"e1"
+	},
+	"esp32 config":	{
+		"esp32_version":	"aceinna_bt_v_1.3",
+		"esp32_serial":	"807d3ab58ffa",
+		"esp32_compile_time":	"Jan  3 2020  17:15:27",
+		"BaudRate":	"460800",
+		"connect_device_num":	"1",
+		"bt_name":	"testjson"
+	}
+}

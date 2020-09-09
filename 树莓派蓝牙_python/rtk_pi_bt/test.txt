@@ -1,0 +1,13 @@
+hciconfig hci0 up	//启动蓝牙服务
+sudo service bluetooth start
+
+bluetoothctl
+power on 
+
+运行sudo hciconfig hci0 piscan  //启动
+绑定：rfcomm bind /dev/rfcomm0 [MAC] [channel] 
+解除绑定：rfcomm release /dev/rfcomm0 
+查看绑定：rfcomm show /dev/rfcomm0
+
+
+sudo rfcomm watch hci0

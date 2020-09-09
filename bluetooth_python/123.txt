@@ -1,0 +1,28 @@
+{
+	"openrtk config":	{
+		"Product Name":	"OpenRTK330L",
+		"Product PN":	"8350-3021-01 1.0.7",
+		"Product SN":	1975000049,
+		"Version":	"OpenRTK330L INS App 1.2.2",
+		"Compile Time":	"May 14 2020",
+		"userPacketType":	"s1",
+		"userPacketRate":	100,
+		"leverArmBx":	0,
+		"leverArmBy":	0,
+		"leverArmBz":	0,
+		"pointOfInterestBx":	0,
+		"pointOfInterestBy":	0,
+		"pointOfInterestBz":	0,
+		"rotationRbvx":	0,
+		"rotationRbvy":	0,
+		"rotationRbvz":	0
+	},
+	"esp32 config":	{
+		"esp32_version":	"aceinna_bt_v_1.4.1",
+		"esp32_serial":	"1975000049",
+		"esp32_compile_time":	"Apr 13 2020  13:13:28",
+		"BaudRate":	"460800",
+		"connect_device_num":	"1",
+		"bt_name":	"UTF-8"
+	}
+}

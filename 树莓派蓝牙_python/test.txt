@@ -1,0 +1,48 @@
+service bluetooth start
+update-rc.d bluetooth enable	//自启动
+
+
+hciconfig hci0 up	//启动蓝牙服务
+sudo service bluetooth start
+
+bluetoothctl
+power on 
+discoverable  yes //可被发现
+运行sudo hciconfig hci0 piscan  //启动
+绑定：rfcomm bind /dev/rfcomm0 [MAC] [channel] 
+解除绑定：rfcomm release /dev/rfcomm0 
+查看绑定：rfcomm show /dev/rfcomm0
+
+
+sudo rfcomm watch hci0
+
+
+apt-get install libbluetooth-dev  安装bluez蓝牙库
+下载libusb   sudo apt-get install libusb-1.0-0-dev
+sudo apt-get install minicom  //串口助手
+sudo apt install pulseaudio-module-bluetooth  防止出现org.bluez.Error.Failed 错误
+或者rfkill unblock bluetooth 
+hciconfig hci0 up
+
+http://www.kbase101.com/question/33461.html
+sudo usermod -G bluetooth -a pi
+
+
+
+
+
+
+
+
+
+
+
+
+#进入蓝牙控制模式
+bluetoothctl
+#扫描设备
+scan on  
+#信任设备
+truct <MAC>
+#连接设备
+connect <MAC>

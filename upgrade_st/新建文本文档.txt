@@ -1,0 +1,36 @@
+size = 4
+fd c6 49 28 size = 1
+71 size = 4
+00 84 03 00 size = 1
+38 size = 1
+5a size = 16
+f4 01 d5 bc 73 40 98 83 04 01 ff 00 00 00 00 00 size = 4
+0f 64 94 67 size = 4
+08 1e 00 00 size = 4
+
+
+xldr_teseo5_sync			fd c6 49 28
+xldr_teseo5_send_baudrate		0x71    00 84 03 00
+xldr_teseo5_check_baudrate        	0x38 为何需要与0x5a合并?
+
+
+	tInt  fileSize;
+	tU32  bootMode;
+	tU32  crc32;
+	tInt  destinationAddress;
+	tInt  entryPoint;
+	tU8   eraseNVM;
+	tU8   eraseOnly;
+	tU8   programOnly;
+	tU8   subSector;
+	tU8   sta8090fg;
+	tU8   res1;
+	tU8   res2;
+	tU8   res3;
+	tInt  nvmOffset;
+	tInt  nvmEraseSize;
+	tU32  debug;
+	tU32  debugAction;
+	tU32  debugAddress;
+	tInt  debugSize;
+	tU32  debugData;

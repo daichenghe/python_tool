@@ -1,0 +1,17 @@
+netbios_hdr:
+trans_id	21919
+flags		4097
+questions	256
+answerRRS	0
+authorityRRS	0
+additionalRRS	0
+netbios_name_hdr:
+nametype	32
+encname		len(33)
+type		8192
+cls		256
+ttl		3908001529
+datalen		22396
+flags		65535
+addr		696319999
+

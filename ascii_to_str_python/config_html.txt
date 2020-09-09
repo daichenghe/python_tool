@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Aceinna OpenRTK 330</title>
+
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+
+
+
+<style type='text/css'>
+
+html {
+
+    height: 100%;
+
+}
+
+body {
+
+	font-family:Verdana;
+
+    color: #000000;
+
+    font: 300 87.5%/1.5em 'Open Sans', sans-serif;
+
+}
+
+.header {
+
+	background: #303030;
+
+	height:60px;
+
+	width:100%;
+
+	top:0;
+
+	position:absolute;
+
+	font-family:Verdana;
+
+    color: white;
+
+    font-size: 32px;
+
+    text-align: center;
+
+	padding-top:14px;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+}
+
+.main {
+
+	background: snow;
+
+	height:auto;
+
+	width:100%;
+
+	top:60px;
+
+	bottom:80px;
+
+	position:absolute;
+
+	padding-top:20px;
+
+	margin-right:auto;
+
+	margin-left:auto;
+
+}
+
+.footer {
+
+	background: #303030;
+
+	height:80px;
+
+	width:100%;
+
+	bottom:0;
+
+	position:absolute;
+
+}
+
+.h3 {
+
+	 text-align: center;
+
+	 color: black;
+
+	 font-size: 18px;
+
+}
+
+* {
+
+    margin: 0;
+
+    /* Form Layout */
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+.form-wrapper {
+
+    background: #1f1f1f;
+
+    border-radius: 2px;
+
+    margin: 15px auto;
+
+    width: 400px;
+
+}
+
+form {
+
+    padding: 30px 20px;
+
+}
+
+.form-item {
+
+    margin-bottom: 10px;
+
+    width: 100%;
+
+}
+
+.form-item input {
+
+    border: none;
+
+    background: #303030;
+
+    border-radius: 2px;
+
+    color: #fff;
+
+    font-family: 'Open Sans', sans-serif;
+
+    font-size: 1em;
+
+    height: 50px;
+
+    padding: 0 16px;
+
+    transition: background 0.3s ease-in-out;
+
+    width: 100%;
+
+}
+
+.form-item input:focus {
+
+    background: #4d545e;
+
+    outline: none;
+
+}
+
+.button-panel {
+
+    margin: 20px 0 0;
+
+    width: 100%;
+
+}
+
+.button-panel .button {
+
+    background: #9b0000;
+
+    border: none;
+
+    border-radius: 2px;
+
+    color: #fff;
+
+    cursor: pointer;
+
+    height: 50px;
+
+    font-family: 'Open Sans', sans-serif;
+
+    font-size: 1.2em;
+
+    letter-spacing: 0.05em;
+
+    text-align: center;
+
+    text-transform: uppercase;
+
+    transition: background 0.3s ease-in-out;
+
+    width: 100%;
+
+}
+
+.button:hover {
+
+    background: #600;
+
+}
+
+</style>
+
+<script>
+
+
+
+</script>
+
+</head>
+
+
+
+ 
+
+<body>
+
+<div class="header">Aceinna OpenRTK330 Interface</div>
+
+
+
+<div class="main">
+
+	<div align="center">
+
+		<img src="aceinna.png" width="330" height="200"/> 
+
+	</div>
+
+	
+
+	<div class="form-wrapper">
+
+		<form id='SignIn' method='POST' action='SignIn.cgi'>
+
+			<div class="form-item">
+
+				<input type="text" id='txtUsername' name="username" required="required" placeholder="Username"></input>
+
+				<input type="text" id='txtApikey' name="apikey" required="required" placeholder="Apikey"></input>
+
+			</div>
+
+
+
+			<div class="button-panel">
+
+				<input type="submit" class="button" title="Sign In" value="Sign In"></input>
+
+			</div>
+
+		</form>
+
+	</div>
+
+	
+
+	<div class="h3">
+
+		<a href="https://developers.aceinna.com/profile" target="_blank" >If you don't have account, you should click here to register.</a>
+
+	</div>
+
+</div>
+
+
+
+<div class="footer"></div>
+
+<script type='text/javascript' src='SignIn.js'></script>
+
+</body></html>
